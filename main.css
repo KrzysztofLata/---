@@ -1,0 +1,133 @@
+*
+{
+	background-color:rgb(56, 89, 18);
+	color:white;
+}
+header
+{
+	width:101%;
+	height:160px;
+	background-color:rgb(78, 55, 0);
+	color:white;
+	font-size:40px;
+	text-align:left;
+	position:absolute	;
+	left:-1px;
+	top:-1px;
+}
+p
+{
+	background-color:rgb(78,55,0);
+	font-size:15px;
+	display:inline;
+}
+#menu
+{
+width:100%;
+height:auto;
+position:absolute;
+top:60px;
+background-color:rgb(78,55,0);
+}
+#pole
+{
+	background-color:rgb(56, 89, 18);
+	border-right:1px solid black;
+}
+#mapa
+{
+	border-left:1px solid black;
+	background-image: url("mapa.png");
+	background-size: cover;
+}
+.kraj
+{
+	position: relative;
+	background-color:transparent;
+	color: black;
+	top:-50px;
+	left:5px;
+	width:60px;
+}
+.kraj:hover
+{
+	cursor:pointer;
+	color:red;
+}
+#polska
+{
+	top: 80px;
+	left:510px;	
+}
+#niemcy
+{
+	top:150px;
+	left:400px;
+}
+#zsrs
+{
+	top:170px;
+	left:600px;
+}
+#francja
+{
+	top:150px;
+	left:315px;
+}
+#anglia
+{
+	top:130px;
+	left:283px;
+}
+#finlandia
+{
+	left:530px;
+	top:35px;
+}
+#wlochy
+{
+	left:400px;
+	top: 215px;
+}
+#hiszpania
+{
+	top:210px;
+	left:259px;
+}
+#budzet
+{
+	width:auto;
+	height:30px;
+	background-color: rgb(78,55,0);
+	color:white;
+	font-size:30px;
+	position:relative;
+	top:115px;
+}
+.gra
+{
+	width:49.5%;
+	height:400px;
+	background-color:pink;
+	position:relative;
+	top:160px;
+	left:-1px;
+`	display:inline;
+	float:left;
+}
+.opcja_menu
+{
+	background-color:green;
+	border:5px double brown;
+	border-radius:3px;
+	width:32%;
+	height:50px;
+	font-size:50px;
+	float:left;
+	text-align:center;
+	margin:auto;
+}
+.opcja_menu:hover
+{
+	background-color:brown;
+}

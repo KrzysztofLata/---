@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Symulator Piłsudskiego</title>
+<link rel="stylesheet" href="main.css">	
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Jozef_Pilsudski1.jpg/433px-Jozef_Pilsudski1.jpg">
+</head>
+<body>
+<header><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Jozef_Pilsudski1.jpg/433px-Jozef_Pilsudski1.jpg" width="45" height="45">Symulator Piłsudskiego</header>
+<div id="menu"></div>
+<div id="budzet">x</div>
+<div class="gra" id="pole"></div>
+<div class="gra" id="mapa">
+<script>
+alert("12 maja 1926...");
+var menu=document.getElementById("menu");
+var panstwa=['zsrs','finlandia','niemcy','anglia','wlochy','francja','hiszpania',"turcja",'rumunia','jugoslawia','czechoslowacja','wegry','holandia','belgia','portugalia','grecja','austria','estonia','szwecja','szwajcaria','litwa','lotwa','dania'];
+var opcje=["armia","zasoby","rozwoj"];
+for (var i=0;i<opcje.length;i++)
+{
+	menu.innerHTML+="<div id='"+opcje[i]+"' class='opcja_menu'>"+opcje[i].toUpperCase()+"</div>";
+}
+for(i=0;i<panstwa.length;i++)
+	{
+		var x=document.createElement('div');
+		x.id=panstwa[i];
+		x.className='kraj';
+		var y=document.createTextNode(panstwa[i].toUpperCase());
+		x.appendChild(y);
+		document.getElementById('mapa').appendChild(x);
+	}
+</script>
+</div>
+<script src="script.js"></script>
+</body></html>
