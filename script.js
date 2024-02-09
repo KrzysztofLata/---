@@ -98,26 +98,28 @@ function rekrutuj()
 	var rek_artyleria=Number(document.getElementById("la").value);
 	var rek_pancerniacy=Number(document.getElementById("lcz").value);	
 	var suma=rek_piechota*piechota.cena+rek_kawaleria*kawaleria.cena+rek_pancerniacy*pancerniacy.cena+rek_artyleria*artyleria.cena;
-	if (suma<finanse.budzet && artyleria.liczba+rek_artyleria>0 && piechota.liczba+rek_piechota>0 && pancerniacy.liczba+rek_pancerniacy>0 && kawaleria.liczba+rek_kawaleria>0)
+	if (suma<=finanse.budzet && artyleria.liczba+rek_artyleria>0 && piechota.liczba+rek_piechota>0 && pancerniacy.liczba+rek_pancerniacy>0 && kawaleria.liczba+rek_kawaleria>0)
 	{
 		//usun number();
 		finanse.budzet-=suma;
 		piechota.liczba+=Number(rek_piechota);
 		kawaleria.liczba+=Number(rek_kawaleria);
-		if (rek_artyleria*2<finanse.stal)
+		if (rek_artyleria*2<=finanse.stal)
 		{	
 			artyleria.liczba+=Number(rek_artyleria);
 			if (rek_artyleria>0) finanse.stal-=rek_artyleria*2;
 		}
-		if (rek_pancerniacy*4<finanse.stal)
+		if (rek_pancerniacy*4<=finanse.stal)
 		{
 			pancerniacy.liczba+=Number(rek_pancerniacy);
 			if (rek_pancerniacy>0)finanse.stal-=rek_pancerniacy*4;
 		}
 		wojsko=piechota.liczba+kawaleria.liczba+pancerniacy.liczba+artyleria.liczba;
-		wstaw();
+		sila_wojsko=pancerniacy.liczba*pancerniacy.sila+piechota.liczba*piechota.sila+kawaleria.liczba*kawaleria.sila+artyleria.liczba*artyleria.sila;
+
 	}
 	armia();
+	wstaw();
 }
 function dyplomacja(p)
 {
@@ -137,7 +139,6 @@ function dyplomacja(p)
 }
 function popraw_relacje(p)
 {
-	wstaw();
 	if (finanse.dyplomacja>=5 && Math.floor(Math.random()*2)==1 && p.relacje<10)
 	{
 		p.relacje+=1;
@@ -155,6 +156,7 @@ function popraw_relacje(p)
 	}
 	var y=p.nazwa.toLowerCase();
 	dyplomacja(y);
+	wstaw();
 }
 function zasoby()
 {
