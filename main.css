@@ -38,7 +38,8 @@ background-color:rgb(78,55,0);
 {
 	border-left:1px solid black;
 	background-image: url("mapa.png");
-	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 .kraj
 {
