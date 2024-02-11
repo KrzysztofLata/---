@@ -36,6 +36,10 @@ background-color:rgb(78,55,0);
 }
 #mapa
 {
+	width: 50%;
+	left:50%;	
+	position: relative;
+	background-color: inherit;
 	border-left:1px solid black;
 	background-image: url("mapa.png");
 	background-size: contain;
@@ -58,42 +62,42 @@ background-color:rgb(78,55,0);
 #polska
 {
 	top: 80px;
-	left:510px;	
+	left:480px;	
 }
 #niemcy
 {
-	top:150px;
-	left:400px;
+	top:140px;
+	left:370px;
 }
 #zsrs
 {
 	top:170px;
-	left:600px;
+	left:550px;
 }
 #francja
 {
-	top:150px;
-	left:315px;
+	top:130px;
+	left:295px;
 }
 #anglia
 {
-	top:130px;
-	left:283px;
+	top:120px;
+	left:265px;
 }
 #finlandia
 {
-	left:530px;
+	left:490px;
 	top:35px;
 }
 #wlochy
 {
-	left:400px;
-	top: 215px;
+	left:360px;
+	top: 190px;
 }
 #hiszpania
 {
-	top:210px;
-	left:259px;
+	top:190px;
+	left:245px;
 }
 #budzet
 {
@@ -107,13 +111,11 @@ background-color:rgb(78,55,0);
 }
 .gra
 {
-	width:49.5%;
 	height:400px;
-	background-color:pink;
 	position:relative;
 	top:160px;
 	left:-1px;
-`	display:inline;
+	display:inline;
 	float:left;
 }
 .opcja_menu
