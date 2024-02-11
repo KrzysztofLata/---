@@ -3,12 +3,15 @@
 	background-color:rgb(56, 89, 18);
 	color:white;
 }
+html
+{
+	width:1350px;
+}
 header
 {
 	width:101%;
 	height:160px;
 	background-color:rgb(78, 55, 0);
-	color:white;
 	font-size:40px;
 	text-align:left;
 	position:absolute	;
@@ -36,9 +39,6 @@ background-color:rgb(78,55,0);
 }
 #mapa
 {
-	width: 50%;
-	left:50%;	
-	position: relative;
 	background-color: inherit;
 	border-left:1px solid black;
 	background-image: url("mapa.png");
@@ -47,7 +47,7 @@ background-color:rgb(78,55,0);
 }
 .kraj
 {
-	position: relative;
+	position:relative;
 	background-color:transparent;
 	color: black;
 	top:-50px;
@@ -58,11 +58,6 @@ background-color:rgb(78,55,0);
 {
 	cursor:pointer;
 	color:red;
-}
-#polska
-{
-	top: 80px;
-	left:480px;	
 }
 #niemcy
 {
@@ -111,7 +106,10 @@ background-color:rgb(78,55,0);
 }
 .gra
 {
+
+	width:49.5%;
 	height:400px;
+	background-color:pink;
 	position:relative;
 	top:160px;
 	left:-1px;
@@ -133,4 +131,10 @@ background-color:rgb(78,55,0);
 .opcja_menu:hover
 {
 	background-color:brown;
+}
+table
+{
+	width:100%;
+	text-align: center;
+	vertical-align: middle;
 }
